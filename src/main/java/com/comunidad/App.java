@@ -2,6 +2,7 @@ package com.comunidad;
 
 import static spark.Spark.*;
 
+import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,8 +18,9 @@ public class App
         init();
         get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            
-            
+            Connection conn=Conexion.getConnectionPSQL();
+            System.out.println(conn.getSchema());
+            conn.close();
             return new ModelAndView(model, "/main.vm");
         }, new VelocityTemplateEngine());
     }
