@@ -9,8 +9,34 @@
         </head>
     <body>
         <h1 id="titulo">Comunidad TC</h1>
+        <div class="contenedor-btn"><button class="btn">Registrarse</button></div>
+        <div class="contenedor-tarjetas">
+            #foreach($persona in $personas)    
+            <div class="tarjeta-cliente">
+                <div class="seccion-superior">
+                    <div class="imagen-tarjeta">
+                        <img src="$persona.fotografia" alt="">
+                    </div>
+                    <div class="tarjeta-nombre">
+                        <span>Nombre completo: $persona.nombre $persona.apellidoPaterno $persona.apellidoMaterno</span>
+                    </div>
+                </div>
+                <div class="seccion-inferior">
+                    <div><strong>Edad: $persona.edad</strong> <span> </span></div>
+                    <div><strong>Lenguajes favoritos: $persona.lenguajeFav</strong> <span> </span></div>
+                    <div>
+                        <strong>Vacunado: $persona.vacuna</strong>
+                        <span></span>
+                    </div>
+                    <div>
+                        <strong>Correo: $persona.correo</strong>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            #end
+        </div>
         
-       
         <script src='public/JS/Main.js'></script>
     </body>
 </html>
