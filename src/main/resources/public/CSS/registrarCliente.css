@@ -1,0 +1,155 @@
+.form-hidden{
+  display: none !important;
+}
+
+.select-bottom{
+  cursor: pointer;
+  text-align: center;
+}
+
+.boton-verde{
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 737px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 66px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 313px;
+  margin: 50px 457px 0 113px;
+}
+
+.u-section-1 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-5 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-7 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: none;
+}
+
+.u-section-1 .u-image-registrar {
+  width: 375px;
+  height: 375px;
+  background-image: url("../imagenes/perfil.jpg");
+  background-position: 50% 50%;
+  margin: -453px -46px 0 auto;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-image: none;
+  margin: 21px auto 0 122px;
+}
+
+.u-section-1 .u-text-registrar {
+  font-size: 0.875rem;
+  margin: -56px 0 60px 869px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-1 {
+    width: 470px;
+    margin-left: 13px;
+    margin-right: 357px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-registrar {
+    margin-right: 13px;
+    margin-left: 669px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-form-1 {
+    margin-left: 0;
+    margin-right: 150px;
+  }
+
+  .u-section-1 .u-text-registrar {
+    margin-right: 10px;
+    margin-left: 449px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-form-1 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-registrar {
+    margin-right: 8px;
+    margin-left: 269px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-registrar {
+    margin-right: 5px;
+    margin-left: 69px;
+  }
+
+  .caja {
+    margin:20px auto 40px auto;	
+    border:1px solid #d9d9d9;
+    height:30px;
+    overflow: hidden;
+    width: 230px;
+    position:relative;
+ }
+ select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+ }
+ select:focus{ outline: none;}
+ 
+ .caja::after{
+   content:"\025be";
+   display:table-cell;
+   padding-top:7px;
+   text-align:center;
+   width:30px;
+   height:30px;
+   background-color:#d9d9d9;
+   position:absolute;
+   top:0;
+   right:0px;	
+   pointer-events: none;
+ }
+}
