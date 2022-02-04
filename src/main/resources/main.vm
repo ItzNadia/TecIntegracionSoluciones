@@ -9,7 +9,7 @@
         </head>
     <body>
         <h1 id="titulo">Comunidad TC</h1>
-        <div class="contenedor-btn"><button class="btn" href="/">Registrarse</button></div>
+        <div class="contenedor-btn"><button type="button" class="btn" id="registrarse">Registrarse</button></div>
         <div class="contenedor-tarjetas">
             #foreach($persona in $personas)    
             <div class="tarjeta-cliente">

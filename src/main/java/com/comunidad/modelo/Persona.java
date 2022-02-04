@@ -11,6 +11,7 @@ import java.util.List;
 
 import com.comunidad.Conexion;
 
+
 public class Persona {
     private int idPersona;
     private String nombre;
