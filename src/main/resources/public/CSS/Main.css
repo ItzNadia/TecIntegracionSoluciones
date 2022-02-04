@@ -1,5 +1,76 @@
 body{
-    background-color: #60ee4d;
+    background-color: #FFFFFF;
     text-align: center;
-    color: #003699;
+    color: #007BFF;
+}
+
+.btn{
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+}
+
+.contenedor-btn{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+}
+
+.tarjeta-cliente > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-cliente{
+    width: calc(30% - 15px);
+    margin-right: 15px;
+    min-height: 200px;
+    background: #f2f2f6;
+    border: 2px solid #007b00;
+    box-shadow: 7px 7px 15px #007b00; 
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.contenedor-tarjetas{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 30px 40px 60px 40px;
+    justify-content: space-between;
+}
+
+.tarjeta-cliente > .seccion-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.seccion-superior{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.seccion-superior img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.seccion-superior > div{
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-inferior{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.tarjeta-nombre{
+    font-size: 20px;
+    padding: 10px;
 }

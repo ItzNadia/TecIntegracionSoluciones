@@ -9,8 +9,32 @@
         </head>
     <body>
         <h1 id="titulo">Comunidad TC</h1>
+        <div class="contenedor-btn"><button class="btn">Registrarse</button></div>
+        <div class="contenedor-tarjetas">
+                <div class="tarjeta-cliente">
+                <div class="seccion-superior">
+                    <div class="imagen-tarjeta">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tarjeta-nombre">
+                        <span>Nombre completo: </span>
+                    </div>
+                </div>
+                <div class="seccion-inferior">
+                    <div><strong>Edad: </strong> <span> </span></div>
+                    <div><strong>Lenguajes favoritos: </strong> <span> </span></div>
+                    <div>
+                        <strong>Vacunado:  </strong>
+                        <span></span>
+                    </div>
+                    <div>
+                        <strong>Correo: </strong>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-       
         <script src='public/JS/Main.js'></script>
     </body>
 </html>
