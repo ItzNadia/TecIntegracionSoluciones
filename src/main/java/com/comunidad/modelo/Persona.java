@@ -3,6 +3,7 @@ package com.comunidad.modelo;
 import java.sql.Statement;
 import java.net.URISyntaxException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -20,6 +21,8 @@ public class Persona {
     private String fotografia;
     private String lenguajeFav;
     private String vacuna;
+
+    public Persona(){}
 
     public Persona(int idPersona, String nombre, String apellidoPaterno, String apellidoMaterno, String correo,
             String edad, String fotografia, String lenguajeFav, String vacuna) {
@@ -127,6 +130,32 @@ public class Persona {
             System.out.println(e.getMessage());
         }
         return personas;
+    }
+
+    public static boolean registrarPersona(Persona persona){
+        boolean resultado=false;
+        try{
+            String query =  " insert into personas (nombres, apellidoPaterno, apellidoMaterno, correo, edad, lenguajeFavorito, vacuna, fotografia) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+            Connection conn= Conexion.getConnectionPSQL();
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+           
+            preparedStmt.setString(1, persona.getNombre());
+            preparedStmt.setString(2, persona.getApellidoPaterno());
+            preparedStmt.setString(3, persona.getApellidoMaterno());
+            preparedStmt.setString(4, persona.getCorreo());
+            preparedStmt.setString(5, persona.getEdad());
+            preparedStmt.setString(6, persona.getLenguajeFav());
+            preparedStmt.setString(7, persona.getVacuna());
+            preparedStmt.setString(8, persona.getFotografia());
+           
+            preparedStmt.execute();
+            resultado=true;
+            preparedStmt.close();
+            conn.close();
+        }catch(SQLException | URISyntaxException e){
+            System.out.println(e.getMessage());
+        }
+        return resultado;
     }
 
     @Override
